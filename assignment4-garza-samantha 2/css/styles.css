@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'richardsonscript';
+    src: url('../fonts/richardsonscript.otf') format('truetype');
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: lowercase;
+    background-image: url("../images/tealbackground.jpeg");
+}
+
+h1{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+}
+.samantha {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 10px;
+    border-style: double;
+    border-radius: 25px;
+    float: right;
+}
+.claw{
+    position: absolute;
+}
+.claw {
+    width: 200px;
+    top: 120px;
+    opacity: .9;
+    animation: slide 20s linear infinite;
+}
+@keyframes slide {
+    from{ left: -50px;}
+    to{ left: 1000px}
+}
+h2 {
+    text-align: center;
+    color: black;
+    font-family: richardsonscript;
+    font-size: 70px;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+span {
+    color: magenta;
+    font-size: 20px;
+}
+
+ul {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h3 {
+    text-transform: capitalize;
+    margin: 10px;
+} 
+.paragraph {
+    max-width: 80%;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.menu ul{
+    list-style: none;
+}
+.menu > ul > li {
+    display: inline-block;
+    background: lightseagreen;
+    width: 24%;
+    margin-bottom: 1px;
+    position: relative;
+    vertical-align: top;
+    
+}
+.menu ul li a{
+    color: #fbfbfb;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    background: white;
+    color: black;
+    transition: .3s;
+}
+.sub-menu {
+    display: none;
+}
+.menu-item:hover .sub-menu {
+    display: block;
+    position: absolute;
+    top: 38px;
+    background: lightseagreen;
+    width: 100%;
+}
+
+.menu > ul >li:nth-child(1) {
+    border-top: 5px solid white;
+}
+.menu > ul >li:nth-child(2) {
+    border-top: 5px solid black;
+}
+.menu > ul >li:nth-child(3) {
+    border-top: 5px solid grey;
+}
+.menu > ul >li:nth-child(4) {
+    border-top: 5px solid whitesmoke;
+}
